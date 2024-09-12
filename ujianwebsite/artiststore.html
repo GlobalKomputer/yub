@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artist Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>artist Store</h1>
+            <input type="text" id="searchinput" placeholder="cari sebuah produk...">
+            <button id="cartbutton">cari(<span id="cartcout">0</span>)</button>
+        </div>
+    </header>
+    <header>
+        <nav>
+            <a href="#" id="cart">Keranjang (0)</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="sketchbook.jpg" alt="Produk 1">
+                <h2>sketchbook</h2>
+                <p>Harga: Rp 40.000</p>
+                <button onclick="addToCart('Produk 1', 40.000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="pensilnmekanik.jpg" alt="Produk 2">
+                <h2>pensil mekanik</h2>
+                <p>Harga: Rp 150.000</p>
+                <button onclick="addToCart('Produk 2', 150.000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="peper stump.jpg" alt="Produk 3">
+                <h2>peper stump</h2>
+                <p>Harga: Rp 8000</p>
+                <button onclick="addToCart('Produk 3', 8000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="oil-pastel-colour.jpg" alt="Produk 4">
+                <h2>oil pastel colour</h2>
+                <p>Harga: Rp 160.000</p>
+                <button onclick="addToCart('Produk 4', 160.000)">Tambah ke Keranjang</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
